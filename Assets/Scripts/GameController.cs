@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour {
     public bool gameOver = false;
     public int score = 0;
     public static GameController instance;
-    //public double time;
+    public double time;
     public Text texto;
     // Use this for initialization
     void Start()
