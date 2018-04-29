@@ -9,8 +9,9 @@ public class GameController : MonoBehaviour {
     public bool gameOver = false;
     public int score = 0;
     public static GameController instance;
-    public double time;
-    public Text texto;
+    
+    public Text tiempoText;
+    public float tiempo = 0.0f;
     // Use this for initialization
     void Start()
     {
@@ -27,6 +28,8 @@ public class GameController : MonoBehaviour {
         //time += Math.Round( Time.deltaTime, 2);
         //time += Math.Round(Time.deltaTime, 2);
         //texto.text = "Score  " + time;
+        tiempo += Time.deltaTime;
+        tiempoText.text = "Score: " + tiempo.ToString("f0") + " ";
 
 
     }
