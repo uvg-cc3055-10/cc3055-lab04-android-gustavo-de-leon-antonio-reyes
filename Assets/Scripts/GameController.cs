@@ -16,7 +16,7 @@ public class GameController : MonoBehaviour {
     void Start()
     {
         instance = this;
-        //time = time + Time.deltaTime;
+        
         
 
 
@@ -25,9 +25,7 @@ public class GameController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        //time += Math.Round( Time.deltaTime, 2);
-        //time += Math.Round(Time.deltaTime, 2);
-        //texto.text = "Score  " + time;
+        
         tiempo += Time.deltaTime;
         tiempoText.text = "Score: " + tiempo.ToString("f0") + " ";
 

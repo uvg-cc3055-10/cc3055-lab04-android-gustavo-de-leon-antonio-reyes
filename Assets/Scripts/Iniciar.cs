@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Iniciar : MonoBehaviour {
 
-    public void StartGame()
+    public void startGame()
     {
         SceneManager.LoadScene("Principal", LoadSceneMode.Single);
     }

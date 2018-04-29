@@ -5,7 +5,7 @@ using UnityEngine;
 public class Asteroid : MonoBehaviour {
 
     
-    private float speed = 5f;
+    private float speed = 10f;
 
 	// Use this for initialization
 	void Start () {

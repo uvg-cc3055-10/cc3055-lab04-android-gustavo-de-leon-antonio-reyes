@@ -5,7 +5,7 @@ using UnityEngine;
 public class AsteroidSpawner : MonoBehaviour {
 
     public GameObject asteroid;
-    public float spawnTime = 4f;
+    public float spawnTime = 1f;
     public float elapsedTime = 0f;
 
     // Use this for initialization
