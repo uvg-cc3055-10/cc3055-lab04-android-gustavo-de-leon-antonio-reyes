@@ -17,6 +17,7 @@ public class NaveScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //mientras que siga viva la nave
         if(GameController.instance.gameOver ==false)
         {
             float movX = Input.acceleration.x;
@@ -25,9 +26,13 @@ public class NaveScript : MonoBehaviour {
         
 
     }
+
+    //en el caso de una colision, es game over, por lo que se va a cargar a la Scene "Menu"
     private void OnTriggerEnter2D(Collider2D collision)
     {
         GameController.instance.gameOver = true;
+
+        // Se va a la Scene "Menu"
         SceneManager.LoadScene("Menu", LoadSceneMode.Single);
         Debug.Log("Murio");
 

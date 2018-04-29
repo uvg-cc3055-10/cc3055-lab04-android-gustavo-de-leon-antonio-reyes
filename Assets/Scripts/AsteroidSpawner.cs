@@ -4,9 +4,11 @@ using UnityEngine;
 
 //Gustavo De Leon 17085
 //Antonio Reyes 17273
+//AsteroidSpawner permite lanzar asteroides de manera aleatoria
 public class AsteroidSpawner : MonoBehaviour {
 
     public GameObject asteroid;
+    //intervalo de tiempo entre cada lanzamiento de asteroide
     public float spawnTime = 1f;
     public float elapsedTime = 0f;
 
