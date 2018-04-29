@@ -4,21 +4,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Gustavo De Leon 17085
+//Antonio Reyes 17273
 public class GameController : MonoBehaviour {
 
-    public bool gameOver = false;
-    public int score = 0;
-    public static GameController instance;
-    
-    public Text tiempoText;
-    public float tiempo = 0.0f;
+    public bool gameOver = false; //Variable que define el estado de vida del jugador   
+    public static GameController instance; //Variable del gamecontroller
+    public Text tiempoText;//Texto donde va el score
+    public float tiempo = 0.0f;//Inicializacion del score
     // Use this for initialization
     void Start()
     {
         instance = this;
-        
-        
-
 
     }
 
@@ -26,8 +23,10 @@ public class GameController : MonoBehaviour {
     void Update()
     {
         
-        tiempo += Time.deltaTime;
-        tiempoText.text = "Score: " + tiempo.ToString("f0") + " ";
+        tiempo += Time.deltaTime;//Control del tiempo
+        tiempoText.text = "Score: " + tiempo.ToString("f0") + " ";//Asigan el timepo a un texto
+                                                                  
+        PlayerPrefs.SetFloat("highScore", tiempo);
 
 
     }

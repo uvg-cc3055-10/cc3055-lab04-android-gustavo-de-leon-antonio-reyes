@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Gustavo De Leon 17085
+//Antonio Reyes 17273
 public class NaveScript : MonoBehaviour {
 
     private Rigidbody2D rb;
