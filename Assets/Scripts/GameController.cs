@@ -24,7 +24,7 @@ public class GameController : MonoBehaviour {
     {
         
         tiempo += Time.deltaTime;//Control del tiempo
-        tiempoText.text = "Score: " + tiempo.ToString("f0") + " ";//Asigan el timepo a un texto
+        tiempoText.text = "Score: " + tiempo.ToString("f0") + " ";//Asigan el tiempo a un texto
                                                                   
         PlayerPrefs.SetFloat("highScore", tiempo);
 

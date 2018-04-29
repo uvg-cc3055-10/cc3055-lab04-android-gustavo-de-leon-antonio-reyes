@@ -14,7 +14,7 @@ public class Iniciar : MonoBehaviour {
 
     public void startGame()
     {
-        //Al precionar el boton "Play", se va a cargar la Scene "Principal" y va a iniciar el juego.
+        //Al presionar el boton "Play", se va a cargar la Scene "Principal" y va a iniciar el juego.
         SceneManager.LoadScene("Principal", LoadSceneMode.Single);
     }
     void Update()
