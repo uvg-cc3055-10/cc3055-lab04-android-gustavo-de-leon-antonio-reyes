@@ -5,7 +5,7 @@ using UnityEngine;
 public class AsteroidSpawner : MonoBehaviour {
 
     public GameObject asteroid;
-    public float spawnTime = 2f;
+    public float spawnTime = 4f;
     public float elapsedTime = 0f;
 
     // Use this for initialization
@@ -26,8 +26,7 @@ public class AsteroidSpawner : MonoBehaviour {
                 float random = Random.Range(-2f, 2f);
                 if (asteroid != null)
                     Instantiate(asteroid, new Vector3(random, 4.43f, 0), Quaternion.identity);
-                else
-                    Debug.Log("null score " + GameController.instance.score);
+                
                 elapsedTime = 0;
             }
         }

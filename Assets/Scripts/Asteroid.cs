@@ -5,7 +5,7 @@ using UnityEngine;
 public class Asteroid : MonoBehaviour {
 
     
-    private float scrollingSpeed = 5f;
+    private float speed = 5f;
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +14,7 @@ public class Asteroid : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(Vector3.down * scrollingSpeed * Time.deltaTime);
+        transform.Translate(Vector3.down * speed * Time.deltaTime);
         if (transform.position.y < -5.3)
         {
             Destroy(gameObject);
